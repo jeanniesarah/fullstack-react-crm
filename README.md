@@ -10,7 +10,17 @@
 
 ### 🏠 [Homepage](https://github.com/jeanniesarah/fullstack-react-crm)
 
+## PostgreSQL Config
+Create database named reactdb 
+Username: postgres
+Password: password
+
+## Run
+Open project in Intellij 
+Run server from main class: src/main/java/com/fullstack/react/ReactApplication.java
+
 ## Install
+Navigate to src/js folder in VSCode and run
 
 ```sh
 npm install
