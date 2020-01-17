@@ -1,6 +1,10 @@
 {
   "name": "js",
   "version": "0.1.0",
+  "description": "CRM that keeps track of students",
+  "author": "Jeannie",
+  "license": "MIT",
+  "homepage": "https://github.com/jeanniesarah/fullstack-react-crm",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -22,7 +26,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "http://localhost:8080",
+  "proxy": "http://localhost:5000",
   "browserslist": {
     "production": [
       ">0.2%",

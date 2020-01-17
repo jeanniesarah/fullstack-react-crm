@@ -1,6 +1,7 @@
 server:
   servlet:
     context-path: /api
+  port: 5000
 
 app:
   datasource:

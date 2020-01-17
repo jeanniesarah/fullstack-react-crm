@@ -1,0 +1,10 @@
+insert into student (student_id, first_name, last_name, email, gender) values ('84b91a4c-0f45-4891-a742-89b7edbc10e0', 'Greg', 'Smith', 'gregsmith0@email.com', 'MALE');
+insert into student (student_id, first_name, last_name, email, gender) values ('c374a903-dadb-4525-a1b9-6df5517612f1', 'Jared', 'Jones', 'jared@gmail.com', 'MALE');
+insert into student (student_id, first_name, last_name, email, gender) values ('a333e9a3-022c-4fc1-ba64-b62efe9897ee', 'Laurent', 'Kadar', 'lkadar2@technorati.com', 'MALE');
+insert into student (student_id, first_name, last_name, email, gender) values ('57c46e4e-e7e1-46c1-89ae-ebfa64e3c0f0', 'Corissa', 'Klain', 'cklain3@geocities.com', 'FEMALE');
+insert into student (student_id, first_name, last_name, email, gender) values ('dbbb250b-ec7d-4a3f-a038-1e1be51f5053', 'Philippa', 'Guyer', 'pguyer4@samsung.com', 'FEMALE');
+insert into student (student_id, first_name, last_name, email, gender) values ('74abb248-6fdd-4f47-8660-3ab0435bb0f1', 'Tom', 'MacIntosh', 'tmacintosh5@nasa.gov', 'MALE');
+insert into student (student_id, first_name, last_name, email, gender) values ('f66e49f1-2e27-4710-ba31-fb7d0e2f4ed0', 'Nicolas', 'Syvret', 'nsyvret6@nba.com', 'MALE');
+insert into student (student_id, first_name, last_name, email, gender) values ('36e8d440-6d4e-4865-b678-11bec95e5b6a', 'Lola', 'Bradlaugh', 'lbradlaugh7@shinystat.com', 'FEMALE');
+insert into student (student_id, first_name, last_name, email, gender) values ('e048d066-683d-4cc5-9836-e70e67e40a08', 'James', 'O''Hare', 'johare8@cnbc.com', 'MALE');
+insert into student (student_id, first_name, last_name, email, gender) values ('c19e8704-c444-4501-a710-572be7a47fe0', 'Wes', 'Swanborough', 'wswanborough9@columbia.edu', 'MALE');
