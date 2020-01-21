@@ -68,7 +68,7 @@ class App extends Component {
               this.closeAddStudentModal();
               this.fetchStudents();
             }}
-            onFailure={(error) => {
+            onFailure={error => {
               const message = error.error.message;
               const description = error.error.httpStatus;
               errorNotification(message, description);
@@ -92,7 +92,7 @@ class App extends Component {
 
     // if we have students and something within it, display
     if (students && students.length) {
-      // antd table - make sure table properties map JSON data that comes from our server
+      // antd table - ensuring table properties map JSON data that comes from server
       const columns = [
         {
           title: "",

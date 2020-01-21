@@ -21,7 +21,7 @@ public class StudentService {
         this.emailValidator = emailValidator;
     }
 
-    List<Student> getAllStudents() {
+    List < Student > getAllStudents() {
         return studentDataAccessService.selectAllStudents();
     }
 
@@ -38,7 +38,7 @@ public class StudentService {
             throw new ApiRequestException(student.getEmail() + " is not valid");
         }
         // Verify that email is not taken
-        if (studentDataAccessService.isEmailTaken(student.getEmail())){
+        if (studentDataAccessService.isEmailTaken(student.getEmail())) {
             throw new ApiRequestException(student.getEmail() + " is already taken");
 
         }
@@ -46,7 +46,7 @@ public class StudentService {
         studentDataAccessService.insertStudent(newStudentId, student);
     }
 
-    List<StudentCourse> getAllCoursesForStudent(UUID studentId) {
+    List < StudentCourse > getAllCoursesForStudent(UUID studentId) {
         return studentDataAccessService.selectAllStudentCourses(studentId);
     }
 }

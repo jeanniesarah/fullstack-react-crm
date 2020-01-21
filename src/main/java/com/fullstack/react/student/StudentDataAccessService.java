@@ -18,7 +18,7 @@ public class StudentDataAccessService {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    List<Student> selectAllStudents(){
+    List < Student > selectAllStudents() {
         String sql = "" +
                 "SELECT " +
                 " student_id, " +
@@ -50,7 +50,7 @@ public class StudentDataAccessService {
         );
     }
 
-    private RowMapper<Student> mapStudentFromDb() {
+    private RowMapper < Student > mapStudentFromDb() {
         return (resultSet, i) -> { //takes raw sql data from query and transforms it into java object
             String studentIdStr = resultSet.getString("student_id");
             UUID studentId = UUID.fromString(studentIdStr);
@@ -81,12 +81,14 @@ public class StudentDataAccessService {
                 ")";
         return jdbcTemplate.queryForObject(
                 sql,
-                new Object[] {email},
+                new Object[] {
+                        email
+                },
                 (resultSet, i) -> resultSet.getBoolean(1)
         );
     }
 
-    List<StudentCourse> selectAllStudentCourses(UUID studentId) {
+    List < StudentCourse > selectAllStudentCourses(UUID studentId) {
         String sql = "" +
                 "SELECT " +
                 " student.student_id, " +
@@ -104,12 +106,14 @@ public class StudentDataAccessService {
                 "WHERE student.student_id = ?";
         return jdbcTemplate.query(
                 sql,
-                new Object[]{studentId},
+                new Object[] {
+                        studentId
+                },
                 mapStudentCourseFromDb()
         );
     }
 
-    private RowMapper<StudentCourse> mapStudentCourseFromDb(){
+    private RowMapper < StudentCourse > mapStudentCourseFromDb() {
         return (resultSet, i) ->
                 new StudentCourse(
                         UUID.fromString(resultSet.getString("student_id")),
