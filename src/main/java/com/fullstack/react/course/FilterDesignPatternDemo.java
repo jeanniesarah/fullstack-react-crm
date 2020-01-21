@@ -5,7 +5,7 @@ import java.util.List;
 
 public class FilterDesignPatternDemo {
     public static void main(String[] args) {
-        List<Course> courseList = new ArrayList<>();
+        List < Course > courseList = new ArrayList < > ();
 
         courseList.add(new Course("Computer Architecture 101", "CS"));
         courseList.add(new Course("HTML, CSS, JavaScript 102", "CS"));
@@ -17,14 +17,13 @@ public class FilterDesignPatternDemo {
 
         System.out.println("Computer Science Courses: ");
         printCourseInfo(csCourses.criteria(courseList));
-        }
-
-        public static void printCourseInfo(List<Course> courseList){
-            for (Course course : courseList){
-                System.out.println("| Name: "
-                        + course.getName() + ", Course code: "
-                        + course.getCourseCode() + " |");
-            }
-        }
     }
 
+    public static void printCourseInfo(List < Course > courseList) {
+        for (Course course: courseList) {
+            System.out.println("| Name: " +
+                    course.getName() + ", Course code: " +
+                    course.getCourseCode() + " |");
+        }
+    }
+}
