@@ -10,7 +10,7 @@ const tagStyle = {
   ...inputBottomMargin
 };
 
-const AddStudentForm = (props) => (
+const AddStudentForm = props => (
   <Formik
     initialValues={{ firstName: "", lastName: "", email: "", gender: "" }}
     validate={values => {
@@ -40,15 +40,16 @@ const AddStudentForm = (props) => (
       return errors;
     }}
     onSubmit={(student, { setSubmitting }) => {
-      addNewStudent(student).then(() => {
-        props.onSuccess();
-      })
-      .catch(err => {
+      addNewStudent(student)
+        .then(() => {
+          props.onSuccess();
+        })
+        .catch(err => {
           props.onFailure(err);
-      })
-      .finally(() => {
-        setSubmitting(false);
-      })
+        })
+        .finally(() => {
+          setSubmitting(false);
+        });
     }}
   >
     {({
