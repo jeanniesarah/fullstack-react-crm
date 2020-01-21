@@ -19,13 +19,13 @@ public class StudentController {
     }
 
     @GetMapping
-    public List<Student> getAllStudents() {
-       return studentService.getAllStudents();
+    public List < Student > getAllStudents() {
+        return studentService.getAllStudents();
     }
 
     @GetMapping(path = "{studentId}/courses")
-    public List<StudentCourse> getAllCoursesForStudent(
-            @PathVariable("studentId") UUID studentId){
+    public List < StudentCourse > getAllCoursesForStudent(
+            @PathVariable("studentId") UUID studentId) {
         return studentService.getAllCoursesForStudent(studentId);
     }
 

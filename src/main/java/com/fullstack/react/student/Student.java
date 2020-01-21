@@ -21,7 +21,7 @@ public class Student {
     @NotNull
     private final Gender gender;
 
-    public Student(@JsonProperty("studentId") UUID studentId,        //receive json payload and map using these properties
+    public Student(@JsonProperty("studentId") UUID studentId, //receive json payload and map using these properties
                    @JsonProperty("firstName") String firstName,
                    @JsonProperty("lastName") String lastName,
                    @JsonProperty("email") String email,
@@ -65,6 +65,7 @@ public class Student {
     }
 
     enum Gender {
-        MALE, FEMALE
+        MALE,
+        FEMALE
     }
 }

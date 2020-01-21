@@ -11,4 +11,3 @@ public class ProxyDesignPatternDemo {
         System.out.println("Image won't be loaded from disk");
     }
 }
-
